@@ -30,9 +30,9 @@ The requirements for the system, as stated by the client are:
 
 In addition to the `migrations` and `seeding` scripts, write a data access file that **exports** an object with the following functions:
 
-- `getRecipes()`: should return a list of all recipes in the database.
-- `getShoppingList(recipe_id)`: should return a list of all ingredients and quantities for a given recipe
-- `getInstructions(recipe_id)`: should return a list of step by step instructions for preparing a recipe
+<!-- - `getRecipes()`: should return a list of all recipes in the database. -->
+<!-- - `getShoppingList(recipe_id)`: should return a list of all ingredients and quantities for a given recipe -->
+<!-- - `getInstructions(recipe_id)`: should return a list of step by step instructions for preparing a recipe -->
 
 Organize and name your files anyway you see fit.
 
