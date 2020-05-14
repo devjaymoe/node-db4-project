@@ -17,8 +17,18 @@ router.get('/:id/shoppinglist', (req, res) => {
   const { id } = req.params
   Recipes.getShoppingList(id)
     .then(shoppinglist => {
-      console.log('router then', shoppinglist)
       res.status(200).json(shoppinglist);
+    })
+    .catch(error => {
+      res.status(500).json(error);
+    });
+})
+
+router.get('/:id/steps', (req, res) => {
+  const { id } = req.params
+  Recipes.getInstructions(id)
+    .then(steps => {
+      res.status(200).json(steps);
     })
     .catch(error => {
       res.status(500).json(error);
