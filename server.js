@@ -6,6 +6,10 @@ const server = express();
 
 server.use(express.json());
 
+server.get('/', (req, res) => {
+  res.status(200).json({ message: 'server is up!'})
+})
+
 server.get('/api/recipes', (req, res) => {
   // get all recipes from the database
   db('recipes')
